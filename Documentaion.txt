@@ -1,0 +1,46 @@
+NPM 
+
+1)Node: Installation steps: 
+	 first we should instal nodejs from nodejs website.
+
+	1) Download nodejs.exe from download for windows.
+	2) Double click to execute exe file and select for Node, Node package manager, add path
+	3) Open up nodejs console and check js Console.log("testing") or any js code
+	4) Check var a = 20; enter and type a and presss enter key to display result. Then use '.exit' coammant to close window.
+	
+2) NPM:- 
+	Node package manager having plenty of node packages. 
+	https://npmjs.com/ here we can find any type of npm and can download from 'node install package'
+	
+	it shows 58 thousends pkgs are available.
+	We can search npm from website search input box or we can able to search from command prompt
+
+	1 'npm search jquery' -to view all jquery packages, 'npm search jquery | more' to view page wise information.
+	2 'npm view jquery version' -to view latest version of the jquery
+	3 'npm view jquery versions' -to view all versions which is existed on jquery
+	4 'npm install jquery' - to install the package and check npm list to check again package created or not
+	5 'npm uninstall jquery' -to uninstall the package and check npm list to again forlder is exists or not. 
+	6 'npm install underscore@1.8.2' -to install particular package installed and check npm list
+	7 'npm list or ls' -to know current veriions and to view dependancy versions based on the respective dependencies tree to. 
+	8 'npm init' -to create our own package or project, it is asking below details:-
+		
+		name: mysampleapp -> always small chars
+		version: 1.0.0 ->press enter to by default version taken
+		description: this is my first app
+		entry point: (index.js)
+		test commands: 
+		git repository:
+		keywords: sample trail
+		authour: authour name
+		licence: (ISC)
+		
+		Is this Ok?(Yes) -> Finally automatically created package.json based on the above input values 
+				OR else 
+		we can create package.js forcefully directly using with below command
+		> npm init --force
+		> npm init --f or -y or --yes any of these going to create package.json file
+
+	How about the dependancies on package.json?
+		> npm install underschore --save 	->to add dependancy injection modules in package.json injection modules from package.json
+		>npm uninstall underscore@1.5.0 --save ->to uninstall package and removed dependancy injection modules from package.json
+		>npm outdated ->to check current packages versions compared with latest versions
